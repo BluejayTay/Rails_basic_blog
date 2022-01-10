@@ -1,3 +1,23 @@
-<h1>New Article</h1>
+<div class ="header">
+<div class="title">ARTycles</div>
+<div>Your go-to for artsy articles!</div>
+</div>
 
-<%= render "form", article: @article %>
+
+<div class ="container-column">
+  <div class ="top">
+    <div>
+      <%= link_to "Back to Articles", articles_path %>
+    </div>
+    <div class="title">
+      New Article
+    </div>
+  </div>
+  <div class="form">
+    <%= render "form", article: @article %>
+  </div>
+</div>
+<div class="footer">
+  <div>Site by Taylor Rusthoven</div>
+  <div>Copyright 2022</div>
+</div>
